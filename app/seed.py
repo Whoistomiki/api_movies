@@ -10,9 +10,9 @@ def main():
     # assume movies.csv is located in the project `data` folder
     project_root = os.path.dirname(os.path.dirname(__file__))
     csv_path = os.path.join(project_root, 'data', 'movies.csv')
-  print(f"Seeding DB from: {csv_path}")
-  # seed_full by default when called manually
-  seed_from_csv(csv_path)
+    print(f"Seeding DB from: {csv_path}")
+    # seed_full by default when called manually
+    seed_from_csv(csv_path)
     print("Seeding finished. DB: movies.db")
 
 if __name__ == '__main__':
